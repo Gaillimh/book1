@@ -1,0 +1,8 @@
+<!--pages/fenlei/fenlei.wxml-->
+<view class="home">
+  <view wx:for="{{name}}" wx:key="item" >
+    <navigator url="../fenleiq/fenleiq?name={{name[index]}}">
+      <view ><text>{{name[index]}}</text><image src="../../images/icon/moer.png"></image></view>
+    </navigator>
+  </view>
+</view>

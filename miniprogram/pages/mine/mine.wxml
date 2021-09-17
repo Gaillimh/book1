@@ -1,0 +1,92 @@
+<!--pages/mine/mine.wxml-->
+<view class="mine">
+  <view class="mine-tou">
+    <!-- <view style="height:200rpx;background:red"></view> -->
+    
+    <view class="tou-touxiang" > 
+      <image class="touxiang-image" src="../../images/picture.jpg"></image>
+      <view class="login" style="display:{{hiddenone}};"> 
+        <image src="../../images/tu/login.png"></image>
+        <button  open-type="getUserInfo" bindgetuserinfo="huoqu" >登陆</button>
+      </view>
+      <view class="touxiang">
+        <view style="display:{{hiddentwo}}" >
+          <image src="{{touxiang}}" style="width:120rpx;height:120rpx"></image>
+          <text>
+          {{nicheng}}</text>
+        </view>
+      </view>
+  </view>
+    
+  </view>
+  <view class="mine-dingdan">
+    <view class="dingdan-tou">
+      <text >我的订单</text>
+      <view>
+      <navigator url="../mydd/mydd">
+        <text style="color:	Gray">查看全部订单</text>
+        <text style="color:	Gray"> ></text> 
+      </navigator>
+      </view>
+    </view>
+    <view class="dingdan-tu">
+    <view class="tu">
+      <image src="../../images/tu/daifukuan1.png"></image>
+      <text>
+      待付款</text>
+    </view>
+    <view class="tu">
+      <image src="../../images/tu/daifahuo1.png"></image>
+      <text>
+      待发货</text>
+    </view>
+    <view class="tu">
+      <image src="../../images/tu/yunshu1.png"></image>
+      <text>
+      待收货</text>
+    </view>
+    <view class="tu">
+      <image src="../../images/tu/daipingjia1.png"></image>
+      <text>
+      待评价</text>
+    </view>
+    <view class="tu">
+      <image src="../../images/tu/tuikuan1.png"></image>
+      <text>
+      退款/售后</text>
+    </view>
+    </view>
+  </view>
+  <view class="mine-xinxi">
+      <view class="xinxi-tu">
+        <image src="../../images/tu2/shoucang.png"></image>
+        <text>
+        收藏商品</text>
+      </view>
+      <view class="xinxi-tu">
+        <image src="../../images/tu2/VIP.png"></image>
+        <text>
+        付费卡</text>
+      </view>
+      <view class="xinxi-tu">
+        <image src="../../images/tu2/lipinka.png"></image>
+        <text>
+        我的礼品卡</text>
+      </view>
+      <view class="xinxi-tu">
+        <image src="../../images/tu2/gouwuche.png"></image>
+        <text>
+        购物车</text>
+      </view>
+      <view class="xinxi-tu" bindtap="pinglun">
+        <image src="../../images/tu2/kefu.png"></image>
+        <text>
+我的评论</text>
+      </view>
+      <view class="xinxi-tu" bindtap="tiaozhuan">
+        <image src="../../images/tu2/shouhuo.png"></image>
+        <text>
+        收获地址</text>
+      </view>
+    </view>
+</view>

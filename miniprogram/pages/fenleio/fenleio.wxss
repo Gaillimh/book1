@@ -1,0 +1,103 @@
+/* pages/all/all.wxss */
+.home{
+  background: #dfdfdf;
+}
+.home-tou{
+  /* text-align: center; */
+  height: 70rpx;
+  background: white;
+  line-height: 70rpx;
+  display:flex;
+}
+.home-tou view{
+  flex: 1;
+}
+.home-tou text{
+  font-size: 32rpx;
+  margin: 20rpx 30rpx 0rpx 20rpx;
+}
+.home-tou image,.home-tou icon{
+  width:45rpx;
+  height:45rpx;
+  padding-top: 10rpx;
+}
+.xiahuaxian{
+  border-bottom: 6rpx solid red;
+}
+.all-tou{
+  background: white;
+  margin-top: 10rpx;
+}
+.all-tou image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.all-mes{
+  /* display: flex;  */
+  width: 100%;
+  /* background: white; */
+}
+.all-neirong{
+  text-align: center;
+  background:white;
+  width: 350rpx;
+  height: 400rpx;
+  border-radius: 8rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.neirong-button{
+  display:flex; 
+  justify-content:space-between;
+  padding-left: 20rpx;
+  padding-right:20rpx;
+}
+.all-neirong image{
+  width: 250rpx;
+  height: 250rpx;
+}
+.item-title{
+  font-size: 30rpx;
+}
+.item-pric{
+  font-size: 35rpx;
+  color: red;
+  font-weight: 20rpx;
+}
+.all-tou{
+  /* text-align: center; */
+  height: 70rpx;
+  background: white;
+  line-height: 70rpx;
+  display:flex;
+  text-align: center;
+  margin-bottom: 8rpx;
+}
+.all-tou text{
+  font-size: 32rpx;
+}
+.all-tou navigator {
+  flex: 1;
+}
+.type{
+  text-align: center;
+  width: 30%;
+  margin: 10rpx;
+  margin-top: 30rpx;
+  background: rgb(253, 253, 253);
+}
+.asc{
+  margin-top: 20rpx;
+  width: 30rpx;
+  height: 35rpx;
+}
+.desc{
+  margin-top: 20rpx;
+  margin-right: 30rpx;
+  width: 30rpx;
+  height: 35rpx;
+}

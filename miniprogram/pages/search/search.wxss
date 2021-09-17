@@ -1,0 +1,64 @@
+/* pages/shou/shou.wxss */
+.paga{
+  display: flex;
+}
+.search{  
+  margin-top: 50rpx;
+  display: flex;  
+  flex-direction: row;
+}   
+.search_arr {  
+  width: 80%;  
+  border: 1px solid #e7e6e6;  
+  background-color: white;
+  border-radius: 10rpx;  
+  margin-left: 20rpx;  
+  font-size: 26rpx;
+}  
+.search_arr input{  
+  margin-left: 40%;  
+  height: 60rpx;  
+  border-radius: 5px;  
+}  
+.bc_text {  
+  line-height: 68rpx;  
+  height: 68rpx;  
+  margin-top:50rpx;  
+}  
+
+.searchcion {  
+  margin: 10rpx 10rpx 10rpx 10rpx;  
+  position: absolute;  
+  left:50rpx;  
+  z-index: 2;  
+  width: 20px;  
+  height: 20px;  
+  text-align: center;  
+}  
+
+/* 内容显示样式 */
+.movie-item{
+  display:inline-flex;
+  justify-content: space-between;
+  margin: 20rpx;
+  width: 45%;
+  height: 50%;
+  background-color: white;
+}
+.movie-item-icon{
+  flex: 1;
+  margin-top: 20rpx;
+  width: 300rpx;
+  height: 300rpx;
+}
+.note-item{
+  margin-left: 50rpx;
+}
+.note-item-text{
+  font-size: 26rpx;
+  color: rgb(40, 41, 41);
+}
+.note-item-money{
+  font-size: 26rpx;
+  color: rgb(199, 43, 43);  
+}

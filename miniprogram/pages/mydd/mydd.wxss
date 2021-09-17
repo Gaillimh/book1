@@ -1,0 +1,110 @@
+page{
+  background: #dfdfdf;
+}
+.search{  
+  margin-top: 10;
+  display: flex;  
+  flex-direction: row;
+}  
+.search_arr {  
+  width: 80%;  
+  border: 1px solid #e7e6e6;  
+  background-color: white;
+  border-radius: 10rpx;  
+  margin-left: 20rpx;  
+  font-size: 26rpx;
+}  
+.search_arr input{  
+  margin-left: 40%;  
+  height: 60rpx;  
+  border-radius: 5px;  
+} 
+.searchcion {  
+  margin: 10rpx 10rpx 10rpx 10rpx;  
+  position: absolute;  
+  left:50rpx;  
+  z-index: 2;  
+  width: 20px;  
+  height: 20px;  
+  text-align: center;  
+} 
+.dingdan-shu{
+  width: 90%;
+  background: white;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+}
+.dingdan-neirong{
+  display: flex;
+}
+.mes-a{
+  flex: 0.5;
+  margin-left: 20rpx;
+}
+.mes-a image{
+  width: 180rpx;
+  height: 200rpx;
+}
+.mes-b{
+  flex: 3;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+.mes-c{
+  flex: 0.5;
+  margin-right: 20rpx;
+}
+.nrjj{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical
+}
+.zhuangtai{
+  font-size: 30rpx;
+  color: red;
+  margin-left: 85%;
+}
+.dingdan-neirong{
+  font-size: 30rpx;
+}
+.name{
+  color: #b8b6b6;
+}
+.tuihuo{
+  font-size: 25rpx;
+  color: red;
+  border:1px solid red;
+}
+.button{
+  font-size: 30rpx;
+  float: right;
+  margin-right: 30rpx;
+}
+.button-a{
+  margin-right: 10rpx;
+  color: #696969;
+}
+.button-b{
+  color: red;
+}
+.all-tou{
+  /* text-align: center; */
+  height: 70rpx;
+  background: white;
+  line-height: 70rpx;
+  display:flex;
+  text-align: center;
+  margin-bottom: 8rpx;
+}
+.all-tou text{
+  font-size: 32rpx;
+}
+.all-tou navigator {
+  flex: 1;
+}

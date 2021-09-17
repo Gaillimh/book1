@@ -1,0 +1,30 @@
+<view class="page">
+<form  bindsubmit="addContent"> 
+  <view class='search' > 
+        <view class="df search_arr">  
+          <icon class="searchcion" size='20' type='search'></icon>  
+          <input  placeholder="关键字搜索" name="note"/>       
+        </view>
+        <view class='sousuo' >
+          <button  form-type="submit" size="mini"  style="height:50rpx;  font-size: 26rpx; " >搜索</button>
+        </view>     
+    </view>       
+   </form>
+   <scroll-view class="movie-item"  wx:for="{{notes}}" wx:key="item">
+    <navigator  url="../xiangqing/xiangqing?name={{item.name}}">
+         <image class="movie-item-icon" src="{{item.photo}}"></image>
+          <view class="note-item">           
+              <text class="note-item-text">书名：{{item.name}} 
+              </text>
+              <text class="note-item-text">作者：{{item.author}}
+              </text>
+              <text class="note-item-money">价格：￥{{item.price}}
+              </text>
+          </view> 
+       </navigator>
+    </scroll-view>
+
+   </view>
+
+
+

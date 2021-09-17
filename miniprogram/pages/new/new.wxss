@@ -1,0 +1,26 @@
+/* pages/new/new.wxss */
+.home{
+  background: #dfdfdf;
+}
+.home-tou{
+  /* text-align: center; */
+  height: 70rpx;
+  background: white;
+  line-height: 70rpx;
+  display:flex;
+}
+.home-tou view{
+  flex: 1;
+}
+.home-tou text{
+  font-size: 32rpx;
+  margin: 20rpx 30rpx 0rpx 20rpx;
+}
+.home-tou image,.home-tou icon{
+  width:45rpx;
+  height:45rpx;
+  padding-top: 10rpx;
+}
+.xiahuaxian{
+  border-bottom: 6rpx solid red;
+}

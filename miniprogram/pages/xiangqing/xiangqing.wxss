@@ -1,0 +1,113 @@
+/* pages/xiangqing/xiangqing.wxss */
+.home{
+  background: #dfdfdf;
+ /*  background: white; */
+  height: 100%;
+}
+.xiang-tou{
+  background:white;
+  height:860rpx; 
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.xiang-tou image{
+  height: 700rpx;
+}
+.xiang-neirong{
+  height:50rpx;
+}
+.neirong-left{
+  font-size: 35rpx;
+  color: red;
+  font-weight: 20rpx;
+  float: left;
+}
+.neirong-button image{
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.right-tu image{
+  float: right;
+}
+.shoucang{
+  font-size: 30rpx;
+  width: 76rpx;
+  float: right;
+}
+.shoucang image{
+  width: 50rpx;
+  height: 50rpx;
+
+}
+.neirong-button{
+  background: white;
+  margin-top: 20rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  font-size:35rpx;
+}
+.neirong-jiesao{
+  font-size: 30rpx;
+  font-weight: 20rpx;
+  float: left;
+  width: 80%;
+  height: 100%;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical
+}
+.mine-bottom{
+  position:fixed;
+  bottom: 0;
+  background:white;
+ /* margin-top: 20rpx;  */
+ /* padding: 200rpx; */
+  width: 100%; 
+  height: 120rpx;
+}
+
+.neirong-right{
+  font: 20rpx;
+  float: right;
+}
+.mine-bottom{
+  position:fixed;
+  bottom: 0;
+  background:white;
+  width: 100%; 
+  height: 105rpx;
+  display: flex;
+  font-size: 25rpx;
+  text-align: center;
+}
+/* .mine-bottom navigator{
+  flex: 1;
+  width: 0rpx;
+} */
+.bottom-tu{
+  flex: 0.8;
+}
+
+.dingdan-anniu{
+  flex: 1; 
+  font-size: 25rpx;
+  padding: 40rpx; 
+  width: 130rpx; 
+  height: 100rpx;
+  margin-left: 20rpx;
+  border-radius: 10rpx;
+}
+.dingdan-anniu2{
+  flex: 1; 
+  border-radius: 10rpx;
+  font-size: 25rpx;
+  padding: 40rpx; 
+  width: 130rpx; 
+  height: 20rpx;
+  margin-right: 20rpx;
+}

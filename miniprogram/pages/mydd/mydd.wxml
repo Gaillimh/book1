@@ -1,0 +1,55 @@
+<view class='search' > 
+        <view class="df search_arr">  
+          <icon class="searchcion" size='20' type='search'></icon>  
+          <input  placeholder="关键字搜索" name="note"/>       
+        </view>
+        <view class='sousuo' >
+          <button  form-type="submit" size="mini"  style="height:50rpx;  font-size: 26rpx; " >搜索</button>
+        </view>     
+    </view> 
+<view class="all-tou"> 
+  <navigator>
+      <text >全部</text>   
+  </navigator>
+    <navigator>
+      <text>待付款</text>
+    </navigator>
+    <navigator>
+      <text>代发货</text>
+    </navigator>
+    <navigator >
+      <text>待收货</text>
+    </navigator>
+    <navigator>
+      <text>待评价</text>
+    </navigator>
+  </view>
+
+<view class="dingdan-shu" wx:for="{{bookb}}"  wx:key="item"> 
+  <view class="zhuangtai"><text>未发货</text></view>
+    <view  wx:for="{{item}}"  wx:key="item">
+    <view class="dingdan-neirong"> 
+      <view class="mes-a">
+        <image src="{{item.image}}"></image>
+      </view>
+      <view class="mes-b">
+        <view >
+          <text class="nrjj">{{item.nrjj}}</text> 
+          <text class="name">《{{item.name}}》</text>
+          <text>
+           </text>
+          <text class="tuihuo">7天退货</text>
+        </view>
+      </view >
+      <view class="mes-c">
+        <text>￥{{item.price}}</text>
+        <text>
+        x{{item.count}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="button">
+    <text class="button-a">共{{count[index]}}件商品</text>
+    <text>合计</text><text class="button-b">￥{{pric[index]}}</text>
+  </view>
+</view> 

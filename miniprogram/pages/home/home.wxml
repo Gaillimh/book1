@@ -1,0 +1,79 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+  <view class="home-tou"> 
+    <navigator>
+      <text class="xiahuaxian">首页</text>   
+  </navigator>
+    <navigator open-type="reLaunch" url="../all/all">
+      <text>全部</text>
+    </navigator>
+    <navigator open-type="reLaunch" url="../new/new">
+      <text>新品</text>
+    </navigator>
+    <view></view> 
+    <navigator url="../search/search">
+      <icon  type="search"></icon>
+    </navigator>
+    <image src="../../images/icon/fenge.png"></image>
+    <image src="../../images/icon/car.png"></image>
+  </view>
+  <view class="home-xinxi">
+    <text>满包邮</text>
+    <text>全店满99.00元 部分地区包邮</text>
+    <text style="float:right">></text>
+  </view>
+    <swiper autoplay="true" interval="2000" circular="true" indicator-dots="true" indicator-active-color="white">
+      <swiper-item >
+        <image class="swiper-image" src="../../images/lunbo/lunbo1.png"></image>
+      </swiper-item>
+      <swiper-item >
+        <image  class="swiper-image" src="../../images/lunbo/lunbo2.png"></image>
+      </swiper-item>
+      <swiper-item >
+        <image  class="swiper-image" src="../../images/lunbo/lunbo3.png"></image>
+      </swiper-item>
+      <swiper-item >
+        <image  class="swiper-image" src="../../images/lunbo/lunbo4.png"></image>
+      </swiper-item>
+    </swiper>
+    <scroll-view  scroll-x style="white-space:nowrap;height: 400rpx;">
+    <view wx:for="{{books}}" wx:key="item" wx:if="{{index < 5}}" class="movie-item">
+      <navigator  url="../xiangqing/xiangqing?name={{item.name}}">
+      <image src="{{item.photo}}"></image>
+      <text class="item-title">
+      {{item.name}}</text>
+      <text class="item-pric">
+      ￥{{item.price}}</text>
+      </navigator>
+    </view>
+  </scroll-view>
+    <view style="height:200rpx">
+      <image src="../../images/lunbo/guanggao2.png" class="swiper-image"></image>
+    </view>
+      <view class="home-tuijian" wx:for="{{books}}" wx:key="item" wx:if="{{index >4 && index < 14}}">
+        <navigator  url="../xiangqing/xiangqing?name={{item.name}}">
+        <image src="{{item.photo}}"></image>
+        <text class="item-title">
+        {{item.name}}</text>
+        <text class="item-pric">
+      ￥{{item.price}}</text>
+      </navigator>
+      </view>
+    <view class="home-bottom">
+    <view>  
+      <text>文　　学</text>
+      <text>艺　　术</text>
+      <text>科　　技</text>
+      <text>经　　营</text>
+    </view>
+    <view>  
+      <text>生　　活</text>
+      <text>设　　计</text>
+      <text>科　　技</text>
+      <text>其　　他</text>
+    </view>
+    </view>
+    <view style="background:red;height:200rpx">
+      <image src="../../images/lunbo/guanggao1.png" class="swiper-image"></image>
+    </view>
+</view>

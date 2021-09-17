@@ -1,0 +1,25 @@
+/* pages/fenlei/fenlei.wxss */
+
+page{
+  background: #dfdfdf;
+}
+.home view{
+  background: white;
+  margin: 10rpx;
+  height: 80rpx;
+  border-radius: 12rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;  
+  text-justify:inter-ideograph;
+  margin-top: 20rpx;
+}
+.home text{
+  margin-left: 20rpx;
+}
+.home image{
+  width: 30rpx;
+  height:30rpx;
+  float: right;
+  margin-right: 20rpx;
+  margin-top: 25rpx;
+}

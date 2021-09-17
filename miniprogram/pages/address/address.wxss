@@ -1,0 +1,34 @@
+/* pages/address/address.wxss */
+.address{
+  background: #dfdfdf;
+  position:absolute;
+  width:100%; 
+  height:100%;
+}
+.add{
+  display: flex;
+  align-items: center;
+  margin:20rpx ;
+  background:white;
+  width: 95%; 
+  height: 80rpx;
+  border-radius: 10rpx;
+}
+.left{
+  padding: 50rpx;
+}
+.right{
+  margin-left:350rpx ;
+}
+.sv{
+  width: 100%;
+}
+.vv{
+  padding: 15rpx;
+  align-items: center;
+  margin:20rpx ;
+  background:white;
+  width: 95%; 
+}
+
+

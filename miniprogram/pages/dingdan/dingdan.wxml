@@ -1,0 +1,92 @@
+<!--pages/gouwuche/quedingdingdan.wxml-->
+<view class="home">
+  <view class="address" style="display:{{t ? ' ':' none;'}}" >
+    <view class="Receiving2"  style="display:{{t ? ' ':' none;'}}">
+      <image src="../../images/dingdan/add.png"></image>  
+      <text>填写收货地址</text>
+      <button>></button>
+    </view>
+    <view class="Receiving"  style="display:{{t ? ' ':' none;'}}">
+      <image src="../../images/dingdan/wechat.png"></image>  
+      <text>一键获取微信地址</text>
+      <button>></button>
+    </view>
+  </view>
+
+  <view class="address-one" style="display:{{t ? ' none;':' '}}" wx:for="{{address}}" wx:key="item">
+    <view  style="display:{{t ? ' none;':' '}}" style="width:80%;">
+      <text>收货地址：{{item.address}}</text>
+      <text>
+        收货人：{{item.name}}      电话：{{item.phone}}</text>  
+    </view>
+ 
+  </view>
+<view class="pay">
+  <view class="pay-tou">
+    <image src="../../images/dingdan/cm.png"></image>
+    <text >无崖子书屋</text>
+  </view>
+  <view class="one"  wx:for='{{goodList}}' wx:for-item="good" wx:key="good.name" > 
+    <view class="one-left">
+    <image src='{{good.cover}}'></image>
+    </view>
+    <view class="one-right">
+    <view class="right-jiesao">
+      <text >{{good.desc}}</text>
+    </view>
+    <view class="jie-a">
+      <text class="bookname">{{good.name}}</text>
+    </view>
+    <view class="jie-b">
+      <text class="tuihuo">七天退货</text>
+    </view>
+    <view class="jie-c">
+    <view>
+      <text class="money">¥{{good.price}}</text>
+    </view>
+      <view class="stepper">  
+        <!-- 减号 -->  
+        <text class='{{good.count <= 1 ? "disabled": "normal"}}' bindtap="bindMinus" data-index='{{index}}'>-</text>  
+        <!-- 数值 -->  
+        <input type="number" bindchange="bindManual" value="{{good.count}}" />  
+        <!-- 加号 -->  
+        <text class="normal" bindtap="bindPlus" data-index='{{index}}'>+</text>  
+      </view> 
+    </view>
+    </view>
+  </view>
+  <view>
+    <text class="freight">运费</text>
+    <text class="freight2">免运费</text>
+  </view>
+  <view>
+    <text class="freight">留言</text>
+    <text class="freight2-b">给卖家留言</text>
+  </view>
+  <view class="five">
+    <image src="../../images/dingdan/safe.png"></image>
+    <text class="warning">正在使用交易资金担保服务，让您购物更放心</text>
+    <text class="warning2">
+    切换为直接到账></text>
+  </view>
+  <view>
+    <text class="freight">　</text>
+    <text class="pric">共{{totalCount}}件商品，合计¥{{totalPrice}}</text>
+  </view>
+</view>
+<view style="width:100%;height:100rpx"></view>
+  <view class="mine-bottom">
+    <view class="bottom">
+    <view class="view-a"></view>
+      <view class="bottom-xinxi">
+        <text>合计:¥{{totalPrice}}</text>
+        <text style="float:right">共{{totalCount}}件商品</text>
+      </view>
+      <view class="view-b"></view>
+        <button style="border: 1px solid red;background:white;color:red">找人代付</button>
+      <view class="view-c"></view>
+        <button bindtap="zhifu" style=" background: red;color:white">立即支付</button>
+      <view class="view-d"></view>
+    </view>  
+  </view>
+</view>

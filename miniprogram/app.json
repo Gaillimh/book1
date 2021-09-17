@@ -1,0 +1,52 @@
+{
+  "pages": [ 
+    "pages/price/price",
+    "pages/fenleiq/fenleiq",
+    "pages/address-add/address-add",
+    "pages/address/address",
+    "pages/fenleio/fenleio",
+    "pages/mydd/mydd",
+    "pages/dingdan/dingdan",
+    "pages/search/search",
+    "pages/xiangqing/xiangqing",
+    "pages/new/new",
+    "pages/all/all",
+    "pages/car/car",
+    "pages/fenlei/fenlei",
+    "pages/mine/mine",
+    "pages/home/home",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "无崖子书屋",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath":"pages/home/home",
+      "text": "首页",
+      "iconPath": "images/icon/home-off.png",
+      "selectedIconPath": "images/icon/home-on.png"
+    },{
+      "pagePath":"pages/fenlei/fenlei",
+      "text": "分类",
+      "iconPath": "images/icon/feilei-off.png",
+      "selectedIconPath": "images/icon/feilei-on.png"
+    },{
+      "pagePath":"pages/car/car",
+      "text": "购物车",
+      "iconPath": "images/icon/car-off.png",
+      "selectedIconPath": "images/icon/car-on.png"
+    },{
+      "pagePath":"pages/mine/mine",
+      "text": "我的",
+      "iconPath": "images/icon/mine-off.png",
+      "selectedIconPath": "images/icon/mine-on.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

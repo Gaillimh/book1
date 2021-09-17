@@ -1,0 +1,279 @@
+/* pages/gouwuche/quedingdingdan.wxss */
+page{
+  background: #dfdfdf;
+  }
+.home{
+
+  height:100%; 
+  background: #dfdfdf;
+}
+.address {
+  margin-top: 20rpx;
+  height: 150rpx;
+  width: 95%;
+  background: white;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+}
+.address-one{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  height: 100rpx;
+  width: 92%;
+  background: white;
+  padding-top: 40rpx;
+  padding-left: 20rpx;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+
+}
+
+.pay{
+    background: white;
+    width: 90%;
+    margin: 20rpx;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    border-radius: 10rpx;
+ }
+.pay-tou{
+  padding-top: 20rpx;
+  font-size: 30rpx;
+}
+.pay-tou image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx;
+}
+.pric{
+  font-size: 30rpx;
+  float: right;
+}
+.Receiving image{
+  width: 60rpx;
+  height:60rpx;
+  margin: 0 auto;
+  text-align: left;
+  position: absolute;
+  top: 100rpx;
+  left:50rpx
+  }
+  .Receiving text{
+  font-size: 35rpx;
+  position: absolute;
+  top:100rpx;
+  left: 120rpx;
+  }
+  .Receiving button{
+    position: absolute;
+    top:80rpx;
+    left: 480rpx;
+  }
+  .Receiving2 image{
+    width: 60rpx;
+    height:60rpx;
+    margin: 0 auto;
+    text-align: left;
+    position: absolute;
+    top: 20rpx;
+    left:50rpx
+    }
+  .Receiving2 text{
+    font-size: 35rpx;
+    position: absolute;
+    top:20rpx;
+    left: 120rpx;
+    }
+    .Receiving2 button{
+      position: absolute;
+      top:0rpx;
+      left: 480rpx;
+    }
+.one image{
+    width: 200rpx;
+    height: 250rpx;
+}
+.one-left{
+  flex: 2;
+}
+.one-right{
+  flex:5;
+  /* color: #999393; */
+  font-size: 30rpx;
+}
+.bookname{
+  color: #999393; 
+}
+.one{
+  margin-top: 20rpx;
+  display: flex;
+  width:100%;
+  height: 250rpx;
+  margin-left: 20rpx;
+}
+
+  .tuihuo{
+  font-size: 20rpx;
+  border: 1px solid rgb(240, 203, 203);
+  color: red;
+  }
+
+  .manjian{
+  font-size: 30rpx;
+
+  }
+  .two button{
+    font-size: 30rpx;
+
+  }
+.freight{
+    font-size: 30rpx;
+}
+.freight2{
+  font-size: 30rpx;
+  float:right;
+  color: rgb(138, 135, 135);
+}
+.freight2-b{
+  font-size: 30rpx;
+  margin-left: 30%;
+  color: rgb(138, 135, 135);
+}
+  .five image{
+  width: 30rpx;
+  height: 30rpx;
+  }
+.warning{
+  font-size: 30rpx;
+  color: rgb(1, 114, 1);
+}
+.warning2{
+  font-size: 25rpx;
+  color: rgb(148, 143, 143);
+}
+
+.mine-bottom{
+  position:fixed;
+  bottom: 0;
+  background:white;
+  width: 100%; 
+  height: 120rpx;
+}
+.bottom-tu{
+  flex: 0.8;
+}
+.dingdan-anniu2{
+  flex: 1; 
+  border-radius: 10rpx;
+  font-size: 25rpx;
+  padding: 40rpx; 
+  width: 130rpx; 
+  height: 20rpx;
+  margin-right: 20rpx;
+}
+.dingdan-anniu{
+  flex: 1; 
+  font-size: 25rpx;
+  padding: 40rpx; 
+  width: 130rpx; 
+  height: 100rpx;
+  margin-left: 20rpx;
+  border-radius: 10rpx;
+}
+.bottom-xinxi{
+  flex: 2;
+}
+.bottom button{
+  flex: 1; 
+  border-radius: 10rpx;
+  font-size: 25rpx;
+  width: 130rpx; 
+  padding:30rpx;
+  height:80rpx;
+}
+.bottom{
+  font-size: 30rpx;  
+  display: flex; 
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.view-a{
+  flex: 2;
+}
+.view-b{
+  flex: 0.2;
+}
+.view-c{
+  flex: 0.2;
+}
+.view-d{
+  flex: 0.2;
+}
+
+
+/*主容器*/  
+.stepper {  
+  width: 80px;  
+  height: 26px;  
+  /*给主容器设一个边框*/  
+  border: 1px solid #ccc;  
+  border-radius: 3px;  
+  margin:0 auto;  
+}  
+
+/*加号和减号*/  
+.stepper text {  
+  width: 19px;  
+  line-height: 26px;  
+  text-align: center;  
+  float: left;  
+}  
+
+/*数值*/  
+.stepper input {  
+  width: 40px;  
+  height: 26px;  
+  float: left;  
+  margin: 0 auto;  
+  text-align: center;  
+  font-size: 12px;  
+  /*给中间的input设置左右边框即可*/  
+  border-left: 1px solid #ccc;  
+  border-right: 1px solid #ccc;  
+}  
+
+/*普通样式*/  
+.stepper .normal{  
+  color: black;  
+}  
+
+/*禁用样式*/  
+.stepper .disabled{  
+  color: #ccc;  
+}  
+.right-jiesao{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical
+}
+.jie-a{
+  margin-top: 10rpx;
+}
+.jie-b{
+  margin-top: 10rpx;
+}
+.jie-c{
+  margin-top: 10rpx;
+  display: flex;
+}
+.jie-c view{
+  flex:1;
+  margin-right: 45rpx;
+}

@@ -1,0 +1,105 @@
+/* pages/mine/mine.wxss */
+.mine{
+  background: #dfdfdf;
+  position:absolute;
+  width:100%; 
+  height:100%;
+}
+/* button{
+  display:none;
+} */
+.login{
+  position:absolute;
+  z-index:1;
+  width: 100%;
+  top:18%;
+
+}
+.touxiang{
+  position:absolute;
+  z-index:1;
+  top:18%;
+  left: 42%;
+}
+.login image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.login button{
+  color: black;
+  width: 50rpx;
+  height: 80rpx;
+  background-color: transparent;
+}
+.dingdan-tou{
+  display:flex; 
+  justify-content:space-between;
+  align-items: center;
+  font-size: 30rpx;
+  padding: 30rpx;
+}
+.dingdan-tu{
+  display: flex;
+  justify-content: center; 
+  text-align: center;
+}
+.dingdan-tu image{
+  width: 60rpx;
+  height: 60rpx; 
+  margin: 0rpx 40rpx ;
+}
+.tu{
+   /* flex: 0.5;  */
+   font-size: 25rpx;
+}
+.mine-dingdan{
+  margin:20rpx ;
+  background:white;
+  /* margin-top: 20rpx;  */
+  /* padding: 200rpx; */
+  width: 95%; 
+  height: 250rpx;
+  border-radius: 10rpx;
+}
+.mine-xinxi{
+  margin:20rpx ;
+  background:white;
+ /* margin-top: 20rpx;  */
+ /* padding: 200rpx; */
+  width: 95%; 
+  height: 350rpx;
+  border-radius: 10rpx;  
+  /* padding-left: 50rpx; */
+  text-align: center;
+  font-size: 30rpx;
+}
+.xinxi-tu{
+  margin:4% 6%;
+  display: inline-block;
+}
+.xinxi-tu image{
+  background: red;
+  width: 40rpx;
+  height:40rpx;
+  padding: 10rpx;
+  border-radius: 25rpx;
+}
+.mine-dingdan{
+  margin: 15rpx;
+}
+.touxiang-image{
+  position: absolute;
+  width: 100%;
+  left: 0rpx;
+  height: 400rpx;
+}
+.tou-touxiang{
+  height:200rpx;
+/*   background-image:url(../../images/picture.jpg); */
+  text-align: center;
+  margin-bottom: 220rpx;
+}
+.touxiang image{
+  border-radius:60rpx;
+  /* padding: 10rpx; */
+}

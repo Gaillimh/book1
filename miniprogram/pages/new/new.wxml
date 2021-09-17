@@ -1,0 +1,18 @@
+<!--pages/new/new.wxml-->
+<view class="home">
+  <view class="home-tou"> 
+    <navigator open-type='switchTab' url="../home/home">
+      <text>首页</text>   
+    </navigator>
+    <navigator open-type="reLaunch" url="../all/all">
+      <text>全部</text>
+    </navigator>
+    <navigator url="../new/new">
+      <text class="xiahuaxian">新品</text>
+    </navigator>
+    <view></view> 
+    <icon  type="search"></icon>
+    <image src="../../images/icon/fenge.png"></image>
+    <image src="../../images/icon/car.png"></image>
+  </view>
+</view>

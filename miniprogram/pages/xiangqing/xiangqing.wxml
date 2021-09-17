@@ -1,0 +1,77 @@
+<!--pages/xiangqing/xiangqing.wxml-->
+<view class="home">
+  <view wx:for="{{books}}" wx:key="item">
+  <view class="xiang-tou" >
+    <image src="{{item.photo}}"></image>
+    <view class="xiang-neirong">
+      <text class="neirong-left">￥{{item.price}}</text>
+      <text class="neirong-right">销量 {{item.XL}}</text>
+    </view>
+    <view class="neirong-biaoti"> 
+     <!--  <text style="float:left">
+      {{item.name}}</text> -->
+      <view class="neirong-jiesao">
+        <text >{{item.ZZJJ}}</text>
+      </view>
+      <view class="shoucang">  
+        <image bindtap="shoucang" data-name="{{shoucang}}" src="{{shoucang}}"></image>
+        <text >收藏</text>
+      </view>
+    </view>
+   <!--  <image src="../../images/icon/xian.png" style="white:90%;height:30rpx"></image> -->
+  </view>
+  <view class="neirong-button">
+  <view class="right-tu">
+    <view>
+      <tex>已选</tex>
+      <text>《{{item.name}}》</text>
+      <image src="../../images/icon/moer.png"></image>
+    </view>
+    <view>
+      <tex>配送</tex>
+      <image src="../../images/icon/moer.png"></image>
+    </view>
+    <view>
+      <tex>参数</tex>
+      <image src="../../images/icon/moer.png"></image>
+    </view> 
+  </view>
+    <view>
+      <image src="../../images/icon/ok.png"></image>7天退货
+      <image src="../../images/icon/ok.png"></image>交易资金担保
+      <image src="../../images/icon/ok.png"></image>实体店
+    </view>
+  </view>
+      <view class="mine-bottom">
+        <view style="width:20rpx"> </view>
+        <view class="bottom-tu">
+          <image style="width:60rpx;height:60rpx" src="../../images/icon/daipingjia1.png"></image>
+          <text>
+          联系店家</text>
+        </view>
+        <view class="bottom-tu">
+          <image style="width:60rpx;height:60rpx" src="../../images/icon/dianpu.png"></image>
+        <text>
+        店铺</text>
+        </view>
+      <navigator open-type="reLaunch" url="../car/car">
+        <view class="bottom-tu">
+            <image style="width:60rpx;height:60rpx" src="../../images/icon/gouwu.png"></image>
+            <text>
+            购物车</text>
+          </view>  
+      </navigator>
+        <!-- <navigator  open-type="switchTab" url="../car/car?name={{item.name}}"> -->
+        <view style="width:20rpx"></view>
+          <button data-item="{{item.name}}" bindtap="tiao" class="dingdan-anniu" style="background:Gold">
+          加入购物车
+          </button>
+        <view style="width:20rpx"></view>
+      <navigator  open-type="reLaunch" url="../car/car?name={{item.name}}">
+        <view class="dingdan-anniu2" style="background:red">
+          立即购买
+        </view>
+      </navigator> 
+      </view>
+  </view>
+</view>

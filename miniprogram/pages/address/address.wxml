@@ -1,0 +1,21 @@
+<!--pages/address/address.wxml-->
+
+<view class="address">
+  <view class="add">
+  <navigator url="../address-add/address-add">
+    <text class="left">添加收获地址</text>
+    <text class="right">></text>
+  </navigator>
+  </view>
+
+  <scroll-view class="sv">
+    <view class="vv" wx:for="{{address}}" wx:key="item">
+
+      <text class="item-name">收货人：{{item.name}}</text>
+      <text class="item-phone">
+      电话：{{item.phone}}</text>
+      <text class="item-address">
+      收货地址：{{item.address}}</text>
+    </view>
+  </scroll-view>
+</view>

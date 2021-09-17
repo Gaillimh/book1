@@ -1,0 +1,24 @@
+<!--pages/all/all.wxml-->
+<view class="home">
+  <view class="all-tou">
+      <text>全部</text>
+      <text>销量</text>
+      <text>新品</text>
+      <text>价格</text>
+  </view>
+  <view class="all-mes">
+    <view class="all-neirong" wx:for="{{books}}" wx:key="item">
+      <navigator  url="../xiangqing/xiangqing?name={{item.name}}">
+        <image src="{{item.photo}}"></image>
+        <text class="item-title">
+        《{{item.name}}》</text>
+        <text class="item-pric">
+      ￥{{item.price}}</text>
+      <view class="neirong-button">
+        <tex class="item-title" style="color:Gray">销量:{{item.XL}}</tex>
+        <image style="width:40rpx;height:40rpx;" src="../../images/icon/gouwured.png"></image>
+      </view>
+      </navigator>
+    </view>
+  </view>
+</view>

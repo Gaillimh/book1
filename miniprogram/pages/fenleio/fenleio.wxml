@@ -1,0 +1,141 @@
+<!--pages/type/type.wxml-->
+<view class="home">
+  <view class="home-tou"> 
+    <navigator open-type='switchTab' url="../home/home">
+      <text >首页</text>   
+    </navigator>
+    <navigator>
+      <text class="xiahuaxian">全部</text>
+    </navigator>
+    <navigator  open-type="reLaunch" url="../new/new">
+      <text>新品</text>
+    </navigator>
+    <view></view> 
+    <icon  type="search"></icon>
+    <image src="../../images/icon/fenge.png"></image>
+    <image src="../../images/icon/car.png"></image>
+  </view>
+  <view class="all-tou">
+    <navigator url="../all/all">
+      <text>综合</text>
+    </navigator>
+    <navigator>
+      <text>分类</text>
+    </navigator>
+    <navigator>
+      <text>销量</text>
+    </navigator>
+    <navigator url="../price/price">
+      <text>价格</text>
+      <image class="asc" src="../../images/icon/desc.png"></image>
+      <image class="desc" src="../../images/icon/asc.png"></image>
+    </navigator>
+  </view>
+
+  <view class="all-mes">
+
+    <view class="type">{{type[0]}}</view>
+    <view class="all-neirong" wx:for="{{books1}}" wx:key="item">
+      <navigator  url="../xiangqing/xiangqing?name={{item.name}}">
+        <image src="{{item.photo}}"></image>
+        <text class="item-title">
+        《{{item.name}}》</text>
+        <text class="item-title">
+        {{item.type}}</text>
+        <text class="item-pric">
+      ￥{{item.price}}</text>
+      <view class="neirong-button">
+        <tex class="item-title" style="color:Gray">销量:{{item.XL}}</tex>
+        <image style="width:40rpx;height:40rpx;" src="../../images/icon/gouwured.png"></image>
+      </view>
+      </navigator>
+    </view>
+
+    <view class="type">{{type[1]}}</view>
+    <view class="all-neirong" wx:for="{{books2}}" wx:key="item">
+      <navigator  url="../xiangqing/xiangqing?name={{item.name}}">
+        <image src="{{item.photo}}"></image>
+        <text class="item-title">
+        《{{item.name}}》</text>
+        <text class="item-title">
+        {{item.type}}</text>
+        <text class="item-pric">
+      ￥{{item.price}}</text>
+      <view class="neirong-button">
+        <tex class="item-title" style="color:Gray">销量:{{item.XL}}</tex>
+        <image style="width:40rpx;height:40rpx;" src="../../images/icon/gouwured.png"></image>
+      </view>
+      </navigator>
+    </view>
+
+    <view class="type">{{type[2]}}</view>
+    <view class="all-neirong" wx:for="{{books3}}" wx:key="item">
+      <navigator  url="../xiangqing/xiangqing?name={{item.name}}">
+        <image src="{{item.photo}}"></image>
+        <text class="item-title">
+        《{{item.name}}》</text>
+        <text class="item-title">
+        {{item.type}}</text>
+        <text class="item-pric">
+      ￥{{item.price}}</text>
+      <view class="neirong-button">
+        <tex class="item-title" style="color:Gray">销量:{{item.XL}}</tex>
+        <image style="width:40rpx;height:40rpx;" src="../../images/icon/gouwured.png"></image>
+      </view>
+      </navigator>
+    </view>
+
+    <view class="type">{{type[3]}}</view>
+    <view class="all-neirong" wx:for="{{books4}}" wx:key="item">
+      <navigator  url="../xiangqing/xiangqing?name={{item.name}}">
+        <image src="{{item.photo}}"></image>
+        <text class="item-title">
+        《{{item.name}}》</text>
+        <text class="item-title">
+        {{item.type}}</text>
+        <text class="item-pric">
+      ￥{{item.price}}</text>
+      <view class="neirong-button">
+        <tex class="item-title" style="color:Gray">销量:{{item.XL}}</tex>
+        <image style="width:40rpx;height:40rpx;" src="../../images/icon/gouwured.png"></image>
+      </view>
+      </navigator>
+    </view>
+
+    <view class="type">{{type[4]}}</view>
+    <view class="all-neirong" wx:for="{{books5}}" wx:key="item">
+      <navigator  url="../xiangqing/xiangqing?name={{item.name}}">
+        <image src="{{item.photo}}"></image>
+        <text class="item-title">
+        《{{item.name}}》</text>
+        <text class="item-title">
+        {{item.type}}</text>
+        <text class="item-pric">
+      ￥{{item.price}}</text>
+      <view class="neirong-button">
+        <tex class="item-title" style="color:Gray">销量:{{item.XL}}</tex>
+        <image style="width:40rpx;height:40rpx;" src="../../images/icon/gouwured.png"></image>
+      </view>
+      </navigator>
+    </view>
+
+    <view class="type">{{type[5]}}</view>
+    <view class="all-neirong" wx:for="{{books6}}" wx:key="item">
+      <navigator  url="../xiangqing/xiangqing?name={{item.name}}">
+        <image src="{{item.photo}}"></image>
+        <text class="item-title">
+        《{{item.name}}》</text>
+        <text class="item-title">
+        {{item.type}}</text>
+        <text class="item-pric">
+      ￥{{item.price}}</text>
+      <view class="neirong-button">
+        <tex class="item-title" style="color:Gray">销量:{{item.XL}}</tex>
+        <image style="width:40rpx;height:40rpx;" src="../../images/icon/gouwured.png"></image>
+      </view>
+      </navigator>
+    </view>
+
+  </view>
+</view>
+
